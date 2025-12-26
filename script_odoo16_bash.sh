@@ -1,7 +1,6 @@
 #!/bin/bash
 ################################################################################
 # Script para instalar o Odoo no Ubuntu 16.04, 18.04, 20.04 e 22.04 (pode ser usado para outras versões também)
-# Autor: Yenthe Van Ginneken
 #-------------------------------------------------------------------------------
 # Este script instalará o Odoo no seu servidor Ubuntu. Ele pode instalar várias instâncias do Odoo
 # em um Ubuntu por causa dos diferentes xmlrpc_ports
@@ -425,4 +424,5 @@ echo "Reiniciar serviço Odoo: sudo service $OE_CONFIG restart"
 if [ $INSTALL_NGINX = "True" ]; then
   echo "Arquivo de configuração Nginx: /etc/nginx/sites-available/$WEBSITE_NAME"
 fi
+
 echo "-----------------------------------------------------------"
